@@ -36,5 +36,16 @@ namespace ClassesImportantes
 
             MessageBox.Show("Mensagem", "Titulo", MessageBoxButtons.YesNo, MessageBoxIcon.Error, MessageBoxDefaultButton.Button2);
         }
+
+        private void btnAleatorio_Click(object sender, EventArgs e)
+        {
+            Random r = new Random(DateTime.Now.Millisecond);
+
+            var valor = r.Next(10, 100);
+            var valor2 = r.NextDouble() * 1000;
+            //gera números decimais aleatórios com três algarismos na parte inteira
+
+            lblResultado.Text = "Número: " + valor2;
+        }
     }
 }
