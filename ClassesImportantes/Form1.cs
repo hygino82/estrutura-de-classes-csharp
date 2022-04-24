@@ -64,5 +64,29 @@ namespace ClassesImportantes
             lblResultado.Text = outro.ToString();
 
         }
+
+        private void btnDateTime_Click(object sender, EventArgs e)
+        {
+            DateTime dateTime =  DateTime.Now;
+            DateTime diaAtual = DateTime.Today;
+            //lblResultado.Text = dateTime.ToString();
+            //lblResultado.Text = diaAtual.ToString();
+            //lblResultado.Text = DateTime.DaysInMonth(2022, 2).ToString();//retorna o número de dias do mês atual
+            //lblResultado.Text = DateTime.IsLeapYear(2022).ToString();//retorna se o ano é bissexto
+            //lblResultado.Text = DateTime.Now.ToLongDateString();//retorna da data por extenso
+            //lblResultado.Text = DateTime.Now.ToShortDateString();//retorna da data por simplificada
+            //lblResultado.Text = DateTime.Now.ToLongTimeString();//retorna a hora mp formato long
+            //lblResultado.Text = DateTime.Now.ToShortTimeString();//retorna a hora mp formato simplificado
+            //lblResultado.Text = DateTime.Now.ToUniversalTime().ToString();//formato universal
+            //lblResultado.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");//formata a data de saída
+
+            DateTime data = new DateTime(1985, 01, 10, 14, 35, 30);
+            //var adicionar = data.AddYears(2);
+            //lblResultado.Text = adicionar.ToString();
+
+            //TimeSpan tempo = new TimeSpan(5, 10, 5, 20);
+            //lblResultado.Text = data.DayOfWeek.ToString();
+            lblResultado.Text = data.DayOfYear.ToString();
+        }
     }
 }

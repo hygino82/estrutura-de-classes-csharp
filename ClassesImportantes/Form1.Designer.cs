@@ -33,6 +33,7 @@ namespace ClassesImportantes
             this.lblResultado = new System.Windows.Forms.Label();
             this.btnAleatorio = new System.Windows.Forms.Button();
             this.btnTimeSpan = new System.Windows.Forms.Button();
+            this.btnDateTime = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMessageBox
@@ -60,7 +61,7 @@ namespace ClassesImportantes
             this.btnAleatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAleatorio.Location = new System.Drawing.Point(192, 399);
             this.btnAleatorio.Name = "btnAleatorio";
-            this.btnAleatorio.Size = new System.Drawing.Size(174, 39);
+            this.btnAleatorio.Size = new System.Drawing.Size(127, 39);
             this.btnAleatorio.TabIndex = 2;
             this.btnAleatorio.Text = "Aleatório";
             this.btnAleatorio.UseVisualStyleBackColor = true;
@@ -69,19 +70,31 @@ namespace ClassesImportantes
             // btnTimeSpan
             // 
             this.btnTimeSpan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimeSpan.Location = new System.Drawing.Point(372, 399);
+            this.btnTimeSpan.Location = new System.Drawing.Point(325, 399);
             this.btnTimeSpan.Name = "btnTimeSpan";
-            this.btnTimeSpan.Size = new System.Drawing.Size(174, 39);
+            this.btnTimeSpan.Size = new System.Drawing.Size(126, 39);
             this.btnTimeSpan.TabIndex = 3;
             this.btnTimeSpan.Text = "TimeSpan";
             this.btnTimeSpan.UseVisualStyleBackColor = true;
             this.btnTimeSpan.Click += new System.EventHandler(this.btnTimeSpan_Click);
+            // 
+            // btnDateTime
+            // 
+            this.btnDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDateTime.Location = new System.Drawing.Point(457, 399);
+            this.btnDateTime.Name = "btnDateTime";
+            this.btnDateTime.Size = new System.Drawing.Size(119, 39);
+            this.btnDateTime.TabIndex = 4;
+            this.btnDateTime.Text = "DateTime";
+            this.btnDateTime.UseVisualStyleBackColor = true;
+            this.btnDateTime.Click += new System.EventHandler(this.btnDateTime_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDateTime);
             this.Controls.Add(this.btnTimeSpan);
             this.Controls.Add(this.btnAleatorio);
             this.Controls.Add(this.lblResultado);
@@ -98,6 +111,7 @@ namespace ClassesImportantes
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Button btnAleatorio;
         private System.Windows.Forms.Button btnTimeSpan;
+        private System.Windows.Forms.Button btnDateTime;
     }
 }
 
