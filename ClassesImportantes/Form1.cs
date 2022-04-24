@@ -47,5 +47,22 @@ namespace ClassesImportantes
 
             lblResultado.Text = "Número: " + valor2;
         }
+
+        private void btnTimeSpan_Click(object sender, EventArgs e)
+        {
+            //lblResultado.Text = TimeSpan.FromDays(7.25).ToString();
+            //lblResultado.Text = TimeSpan.FromTicks(10000000).ToString();//tempo em nano segundos
+            //lblResultado.Text = TimeSpan.TicksPerMinute.ToString();
+            TimeSpan inicio = new TimeSpan(1, 0, 0);
+            TimeSpan fim = new TimeSpan(2, 25, 0);
+
+            TimeSpan intervalo = fim - inicio;
+
+            TimeSpan outro = fim.Subtract(inicio);
+
+            //lblResultado.Text = intervalo.ToString();
+            lblResultado.Text = outro.ToString();
+
+        }
     }
 }
