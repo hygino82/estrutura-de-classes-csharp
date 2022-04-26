@@ -35,6 +35,7 @@ namespace ClassesImportantes
             this.btnTimeSpan = new System.Windows.Forms.Button();
             this.btnDateTime = new System.Windows.Forms.Button();
             this.btnColor = new System.Windows.Forms.Button();
+            this.btnFont = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMessageBox
@@ -93,7 +94,7 @@ namespace ClassesImportantes
             // btnColor
             // 
             this.btnColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnColor.Location = new System.Drawing.Point(562, 399);
+            this.btnColor.Location = new System.Drawing.Point(12, 444);
             this.btnColor.Name = "btnColor";
             this.btnColor.Size = new System.Drawing.Size(154, 39);
             this.btnColor.TabIndex = 5;
@@ -101,11 +102,23 @@ namespace ClassesImportantes
             this.btnColor.UseVisualStyleBackColor = true;
             this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
             // 
+            // btnFont
+            // 
+            this.btnFont.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFont.Location = new System.Drawing.Point(172, 444);
+            this.btnFont.Name = "btnFont";
+            this.btnFont.Size = new System.Drawing.Size(127, 39);
+            this.btnFont.TabIndex = 6;
+            this.btnFont.Text = "Font";
+            this.btnFont.UseVisualStyleBackColor = true;
+            this.btnFont.Click += new System.EventHandler(this.btnFont_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(759, 486);
+            this.ClientSize = new System.Drawing.Size(764, 528);
+            this.Controls.Add(this.btnFont);
             this.Controls.Add(this.btnColor);
             this.Controls.Add(this.btnDateTime);
             this.Controls.Add(this.btnTimeSpan);
@@ -126,6 +139,7 @@ namespace ClassesImportantes
         private System.Windows.Forms.Button btnTimeSpan;
         private System.Windows.Forms.Button btnDateTime;
         private System.Windows.Forms.Button btnColor;
+        private System.Windows.Forms.Button btnFont;
     }
 }
 

@@ -102,7 +102,7 @@ namespace ClassesImportantes
             Color cor1 = Color.FromArgb(150, 255, 160);
             Color cor2 = Color.FromKnownColor(KnownColor.Control);
             Color cor3 = Color.FromName("DarkRed");
-            
+
 
             lblResultado.ForeColor = cor3;
             lblResultado.BackColor = cor1;
@@ -110,6 +110,17 @@ namespace ClassesImportantes
             Color cor4 = lblResultado.BackColor;
 
             btnColor.ForeColor = cor4;
+        }
+
+        private void btnFont_Click(object sender, EventArgs e)
+        {
+            Font letra = new Font("Helvetica, Arial, sans-serif", 36, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Pixel);
+
+            lblResultado.Text = "Bem vindo ao C#";
+            //lblResultado.Font = letra;
+
+            Font letra2 = new Font(FontFamily.GenericMonospace, 36, FontStyle.Regular, GraphicsUnit.Pixel);
+            lblResultado.Font = letra;
         }
     }
 }
