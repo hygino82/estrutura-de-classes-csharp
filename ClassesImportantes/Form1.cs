@@ -67,7 +67,7 @@ namespace ClassesImportantes
 
         private void btnDateTime_Click(object sender, EventArgs e)
         {
-            DateTime dateTime =  DateTime.Now;
+            DateTime dateTime = DateTime.Now;
             DateTime diaAtual = DateTime.Today;
             //lblResultado.Text = dateTime.ToString();
             //lblResultado.Text = diaAtual.ToString();
@@ -87,6 +87,29 @@ namespace ClassesImportantes
             //TimeSpan tempo = new TimeSpan(5, 10, 5, 20);
             //lblResultado.Text = data.DayOfWeek.ToString();
             lblResultado.Text = data.DayOfYear.ToString();
+        }
+
+        private void btnColor_Click(object sender, EventArgs e)
+        {
+            Color vermelho = Color.Red;
+            Color amarelo = Color.Yellow;
+
+            //lblResultado.BackColor = Color.LightGray;//cor do fundo
+            //lblResultado.ForeColor = Color.AliceBlue;//cor da fonte
+
+            //Color cor1 = Color.FromArgb(100, Color.DarkGreen);
+            //Color cor1 = Color.FromArgb(255, 0, 255, 0);
+            Color cor1 = Color.FromArgb(150, 255, 160);
+            Color cor2 = Color.FromKnownColor(KnownColor.Control);
+            Color cor3 = Color.FromName("DarkRed");
+            
+
+            lblResultado.ForeColor = cor3;
+            lblResultado.BackColor = cor1;
+
+            Color cor4 = lblResultado.BackColor;
+
+            btnColor.ForeColor = cor4;
         }
     }
 }
