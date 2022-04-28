@@ -36,6 +36,7 @@ namespace ClassesImportantes
             this.btnDateTime = new System.Windows.Forms.Button();
             this.btnColor = new System.Windows.Forms.Button();
             this.btnFont = new System.Windows.Forms.Button();
+            this.btnEnvironment = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMessageBox
@@ -54,7 +55,7 @@ namespace ClassesImportantes
             this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultado.Location = new System.Drawing.Point(12, 13);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(735, 111);
+            this.lblResultado.Size = new System.Drawing.Size(735, 231);
             this.lblResultado.TabIndex = 1;
             this.lblResultado.Text = "label1";
             // 
@@ -74,7 +75,7 @@ namespace ClassesImportantes
             this.btnTimeSpan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimeSpan.Location = new System.Drawing.Point(305, 399);
             this.btnTimeSpan.Name = "btnTimeSpan";
-            this.btnTimeSpan.Size = new System.Drawing.Size(126, 39);
+            this.btnTimeSpan.Size = new System.Drawing.Size(136, 39);
             this.btnTimeSpan.TabIndex = 3;
             this.btnTimeSpan.Text = "TimeSpan";
             this.btnTimeSpan.UseVisualStyleBackColor = true;
@@ -83,7 +84,7 @@ namespace ClassesImportantes
             // btnDateTime
             // 
             this.btnDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDateTime.Location = new System.Drawing.Point(437, 399);
+            this.btnDateTime.Location = new System.Drawing.Point(447, 399);
             this.btnDateTime.Name = "btnDateTime";
             this.btnDateTime.Size = new System.Drawing.Size(119, 39);
             this.btnDateTime.TabIndex = 4;
@@ -113,11 +114,23 @@ namespace ClassesImportantes
             this.btnFont.UseVisualStyleBackColor = true;
             this.btnFont.Click += new System.EventHandler(this.btnFont_Click);
             // 
+            // btnEnvironment
+            // 
+            this.btnEnvironment.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnvironment.Location = new System.Drawing.Point(305, 444);
+            this.btnEnvironment.Name = "btnEnvironment";
+            this.btnEnvironment.Size = new System.Drawing.Size(136, 39);
+            this.btnEnvironment.TabIndex = 7;
+            this.btnEnvironment.Text = "Environment";
+            this.btnEnvironment.UseVisualStyleBackColor = true;
+            this.btnEnvironment.Click += new System.EventHandler(this.btnEnvironment_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(764, 528);
+            this.Controls.Add(this.btnEnvironment);
             this.Controls.Add(this.btnFont);
             this.Controls.Add(this.btnColor);
             this.Controls.Add(this.btnDateTime);
@@ -140,6 +153,7 @@ namespace ClassesImportantes
         private System.Windows.Forms.Button btnDateTime;
         private System.Windows.Forms.Button btnColor;
         private System.Windows.Forms.Button btnFont;
+        private System.Windows.Forms.Button btnEnvironment;
     }
 }
 

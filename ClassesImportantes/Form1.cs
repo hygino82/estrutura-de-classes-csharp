@@ -122,5 +122,38 @@ namespace ClassesImportantes
             Font letra2 = new Font(FontFamily.GenericMonospace, 36, FontStyle.Regular, GraphicsUnit.Pixel);
             lblResultado.Font = letra;
         }
+
+        private void btnEnvironment_Click(object sender, EventArgs e)
+        {
+            //mosta a localização do diretório dos meus documentos
+            string meusDocs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string arqProgramas = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles);
+            string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+
+            //Environment.CurrentDirectory = "C:\\";
+
+            string dirAtual = Environment.CurrentDirectory;
+            //Environment.NewLine; 
+
+            //Indica o caminho da variável de ambiente
+            string varAmb = Environment.GetEnvironmentVariable("JAVA_HOME");
+
+            //lista as unidades de disco do sistema
+            string[] discos = Environment.GetLogicalDrives();
+
+            /*lblResultado.Text = "";
+
+            foreach (string disco in discos)
+            {
+                lblResultado.Text += disco + "\n";
+            }*/
+
+            string userName = Environment.UserName;
+            string dominio = Environment.UserDomainName;
+            int cpu = Environment.ProcessorCount;
+
+            lblResultado.Text = cpu.ToString();
+
+        }
     }
 }
