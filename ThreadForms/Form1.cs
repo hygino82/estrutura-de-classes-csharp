@@ -40,12 +40,14 @@ namespace ThreadForms
 
         private void Tarefa()
         {
-            /*while (true)
+            while (true)
             {
                 //lblResultado.Text = DateTime.Now.Second.ToString();
-                DefinirValorPropriedade(lblResultado, "Text", DateTime.Now.Second.ToString());
-            }*/
-            DefinirValorPropriedade(lblResultado, "BackColor", Color.Red);
+                //DefinirValorPropriedade(lblResultado, "Text", DateTime.Now.Second.ToString());
+
+                lblResultado.Invoke(new Action(() => lblResultado.Text = DateTime.Now.Second.ToString()));
+            }
+            //DefinirValorPropriedade(lblResultado, "BackColor", Color.Red);
         }
 
         private void DefinirValorPropriedade(Control controle, string propriedade, object valor)
@@ -59,7 +61,7 @@ namespace ThreadForms
             {
                 Type t = controle.GetType();
                 PropertyInfo[] props = t.GetProperties();
-                foreach(PropertyInfo p in props)
+                foreach (PropertyInfo p in props)
                 {
                     if (p.Name.ToUpper() == propriedade.ToUpper())
                     {
